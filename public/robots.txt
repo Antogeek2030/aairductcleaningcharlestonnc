@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aairductcleaningcharlestonnc.com/sitemap-index.xml
+Sitemap: https://airductcleaningcharlestonnc.com/sitemap-index.xml
