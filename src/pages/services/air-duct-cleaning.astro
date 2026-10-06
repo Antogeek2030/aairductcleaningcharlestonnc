@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Air Duct Cleaning | Charleston SC" description="Professional air duct cleaning in Charleston, SC. Negative-pressure equipment, HEPA filtration, upfront pricing.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Air Duct Cleaning</h1>
+      <p>Serving Charleston, James Island, Folly Beach &amp; the Lowcountry.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>Our full air duct cleaning service removes dust, pollen, pet dander, and debris from supply and return ducts using commercial negative-pressure machines and agitation tools. HEPA filtration keeps the process contained.</p>
+      <h2>What's Included</h2>
+      <ul>
+        <li>Inspection of accessible ducts and air handler area</li>
+        <li>Negative-pressure source cleaning of trunk lines</li>
+        <li>Agitation of branch runs and register openings</li>
+        <li>Cleaning of accessible registers and grilles</li>
+        <li>Floor and furniture protection throughout</li>
+      </ul>
+      <h2>Schedule Service</h2>
+      <p>Call <a href={`tel:${phone}`}>{phoneDisplay}</a> for same-day or next-day availability. Based at 775 Folly Rd d, Charleston, SC 29412.</p>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

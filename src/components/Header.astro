@@ -1,0 +1,73 @@
+---
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+const currentPath = Astro.url.pathname;
+---
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">🌬️</span>
+      <span class="logo-text">Air Duct Cleaning<br /><small>Charleston, SC</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="/" class={currentPath === '/' || currentPath === '' ? 'active' : ''}>Home</a>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false">Our Services <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="/services/air-duct-cleaning/">Air Duct Cleaning</a>
+          <a href="/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
+          <a href="/services/sanitization/">Duct Sanitization</a>
+          <a href="/services/mold-remediation/">Mold in Ducts</a>
+          <a href="/services/hvac-maintenance/">HVAC Maintenance</a>
+          <a href="/services/commercial-duct-cleaning/">Commercial Cleaning</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown-toggle" aria-expanded="false">Problems <span class="caret">▾</span></button>
+        <div class="dropdown-menu">
+          <a href="/problems/dusty-home/">Dusty Home</a>
+          <a href="/problems/allergies/">Allergy Flare-Ups</a>
+          <a href="/problems/musty-smell/">Musty Odors</a>
+          <a href="/problems/poor-airflow/">Poor Airflow</a>
+          <a href="/problems/high-energy-bills/">High Energy Bills</a>
+          <a href="/problems/visible-debris/">Visible Debris in Vents</a>
+        </div>
+      </div>
+
+      <a href="/service-areas/">Service Areas</a>
+      <a href="/about/">About Us</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <a href={`tel:${phone}`} class="header-phone">
+      <span>📞</span>
+      <span class="phone-text">{phoneDisplay}</span>
+    </a>
+    <button class="mobile-toggle" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+  btn?.addEventListener('click', () => nav?.classList.toggle('open'));
+
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parent = toggle.closest('.dropdown');
+      const isOpen = parent?.classList.contains('open');
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+      if (!isOpen) parent?.classList.add('open');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!(e.target as Element).closest('.dropdown')) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+    }
+  });
+</script>

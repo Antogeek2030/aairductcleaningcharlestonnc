@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Commercial Duct Cleaning | Charleston SC" description="Commercial air duct cleaning for offices and light commercial spaces in Charleston, SC.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Commercial Duct Cleaning</h1>
+      <p>Offices, retail, and light commercial on James Island &amp; greater Charleston.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>We provide flexible scheduling for commercial properties so disruption to staff and customers is minimized. Documentation of work performed is available upon request.</p>
+      <h2>Ideal For</h2>
+      <ul>
+        <li>Small offices and professional suites</li>
+        <li>Retail storefronts</li>
+        <li>Light industrial and warehouse offices</li>
+        <li>Property managers seeking scheduled maintenance</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

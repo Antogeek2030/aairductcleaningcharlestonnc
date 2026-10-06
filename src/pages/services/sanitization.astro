@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Duct Sanitization | Charleston SC" description="Duct sanitization after cleaning in Charleston, SC. EPA-registered products for odor and microbe control.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Duct Sanitization</h1>
+      <p>Optional treatment after mechanical cleaning.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>After mechanical cleaning removes debris, we can apply an EPA-registered sanitizer formulated for HVAC systems to help reduce residual microbes and control odors — especially useful in humid Lowcountry climates.</p>
+      <h2>When It Helps</h2>
+      <ul>
+        <li>Musty or stale odors from the vents</li>
+        <li>Homes with prior moisture issues</li>
+        <li>Allergy-sensitive households seeking extra peace of mind</li>
+      </ul>
+      <p>Sanitization is always optional and quoted clearly before application.</p>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

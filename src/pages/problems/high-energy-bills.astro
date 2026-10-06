@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="High Energy Bills & Dirty Ducts | Charleston SC" description="Rising HVAC bills? Restricted ducts force systems to work harder. Cleaning can help efficiency.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>High Energy Bills</h1>
+      <p>Restricted airflow means the system runs longer.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>When ducts are clogged, your HVAC unit works harder to achieve the same temperature. Restoring airflow through professional cleaning can support lower runtime and more efficient operation.</p>
+      <h2>How Cleaning Helps</h2>
+      <ul>
+        <li>Improves delivery of conditioned air</li>
+        <li>Reduces unnecessary runtime caused by poor distribution</li>
+        <li>Complements tune-ups and filter maintenance</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

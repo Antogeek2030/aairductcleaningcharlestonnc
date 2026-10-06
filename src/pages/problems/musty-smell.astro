@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Musty Odors from Vents | Charleston SC" description="Musty smell from air vents? Humidity and microbial growth in ducts are common in Charleston. We can help.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Musty or Stale Odors</h1>
+      <p>Often linked to humidity and debris in the duct system.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>Lowcountry humidity can lead to musty odors when organic debris sits in ducts. Cleaning removes the material that harbors odors; optional sanitization can further reduce residual smell.</p>
+      <h2>How Cleaning Helps</h2>
+      <ul>
+        <li>Removes odor-causing debris and dust</li>
+        <li>Allows inspection for visible microbial growth</li>
+        <li>Pairs with humidity control for lasting results</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

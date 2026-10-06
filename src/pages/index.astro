@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">● CHARLESTON &amp; JAMES ISLAND · SAME-DAY SERVICE</div>
+        <h1>AIR DUCT<br />CLEANING IN <span>CHARLESTON</span></h1>
+        <p class="hero-sub">Cleaner Air. Better Flow. Healthier Home.</p>
+        <p class="hero-desc">Dust, pollen, pet dander, and mold spores circulate through your HVAC system every day. Our Charleston technicians use negative-pressure equipment and HEPA filtration to deep-clean supply and return ducts — improving indoor air quality and system efficiency.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">⏱ Same-Day Availability</span>
+          <span class="hero-tag">🛡 Licensed &amp; Insured</span>
+          <span class="hero-tag">✓ Upfront Pricing</span>
+          <span class="hero-tag">🌬️ HEPA Filtration</span>
+          <span class="hero-tag">🛡 Satisfaction Guarantee</span>
+        </div>
+        <div class="hero-ctas">
+          <a href={`tel:${phone}`} class="btn btn-primary">Schedule Cleaning</a>
+          <a href={`tel:${phone}`} class="btn btn-outline">Get a Free Quote</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-icon">🌬️</div>
+          <h3>Breathing Dust?</h3>
+          <p>We remove built-up debris from your entire duct system so every room gets cleaner, fresher air.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Charleston Homeowners <span>Choose Us</span></h2>
+        <p>Coastal humidity, pollen, and older homes mean ducts load up fast. You need a local team that shows up on time, cleans thoroughly, and quotes honestly.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Same-Day &amp; Next-Day Slots</h3>
+          <p>Most residential air duct cleanings in the Charleston area can be scheduled within 24 hours — often the same day.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Trained &amp; Equipped</h3>
+          <p>Technicians use commercial negative-air machines, rotary brushes, and HEPA vacuums designed for full HVAC system cleaning.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💵</div>
+          <h3>Upfront Pricing, No Upsells</h3>
+          <p>We quote based on home size and vent count before work begins. Transparent pricing — no surprise add-ons.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>Local to Charleston</h3>
+          <p>Based on James Island at 775 Folly Rd. We know Lowcountry homes, humidity challenges, and common HVAC setups.</p>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><strong>24h</strong><span>Typical Response</span></div>
+        <div class="stat-item"><strong>100%</strong><span>Satisfaction Focus</span></div>
+        <div class="stat-item"><strong>Local</strong><span>James Island Based</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems preview -->
+  <section class="section" id="problems">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recognize <span>These Signs?</span></h2>
+        <p>If your Charleston home shows any of these, your ducts may need professional cleaning.</p>
+      </div>
+      <div class="problems-grid">
+        <a href="/problems/dusty-home/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Common</span>
+          <h3>Dusty Surfaces Quickly</h3>
+          <p>Dust returns days after cleaning? Contaminants in the ducts are recirculating through your vents.</p>
+        </a>
+        <a href="/problems/allergies/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Health</span>
+          <h3>Allergy or Asthma Flare-Ups</h3>
+          <p>Pollen, dander, and mold spores trapped in ducts can worsen indoor air quality and symptoms.</p>
+        </a>
+        <a href="/problems/musty-smell/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Urgent</span>
+          <h3>Musty or Stale Odors</h3>
+          <p>Humidity in the Lowcountry encourages microbial growth inside ducts — often the source of musty smells.</p>
+        </a>
+        <a href="/problems/poor-airflow/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Efficiency</span>
+          <h3>Weak Airflow from Vents</h3>
+          <p>Debris buildup restricts airflow, forcing your system to work harder and raising energy costs.</p>
+        </a>
+        <a href="/problems/high-energy-bills/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-soon">Cost</span>
+          <h3>Rising Energy Bills</h3>
+          <p>Restricted ducts reduce efficiency. A thorough cleaning can help restore proper airflow and lower usage.</p>
+        </a>
+        <a href="/problems/visible-debris/" class="problem-card" style="display:block">
+          <span class="problem-badge badge-urgent">Visible</span>
+          <h3>Debris or Mold on Vents</h3>
+          <p>Visible dust, insulation particles, or discoloration at registers is a clear signal for professional service.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our <span>Air Quality Services</span></h2>
+        <p>Complete solutions for cleaner indoor air in Charleston homes and light commercial spaces.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🌬️ Air Duct Cleaning</h3>
+          <p>Full system cleaning of supply and return ducts using negative pressure and agitation tools.</p>
+          <ul>
+            <li>Supply &amp; return lines</li>
+            <li>Register &amp; grille cleaning</li>
+            <li>HEPA filtration</li>
+          </ul>
+          <a href="/services/air-duct-cleaning/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>🌀 Dryer Vent Cleaning</h3>
+          <p>Remove lint buildup that reduces dryer efficiency and creates a fire hazard.</p>
+          <ul>
+            <li>Full vent run cleaning</li>
+            <li>Exterior termination check</li>
+            <li>Improved drying times</li>
+          </ul>
+          <a href="/services/dryer-vent-cleaning/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>🧴 Duct Sanitization</h3>
+          <p>EPA-registered sanitizer application after mechanical cleaning to reduce microbes.</p>
+          <ul>
+            <li>Post-clean treatment</li>
+            <li>Odor control</li>
+            <li>Peace of mind</li>
+          </ul>
+          <a href="/services/sanitization/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>🦠 Mold in Ducts</h3>
+          <p>Assessment and remediation guidance when microbial growth is suspected or confirmed.</p>
+          <ul>
+            <li>Visual inspection</li>
+            <li>Source moisture advice</li>
+            <li>Cleaning + treatment</li>
+          </ul>
+          <a href="/services/mold-remediation/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>🔧 HVAC Maintenance Support</h3>
+          <p>Complementary cleaning that helps your system run cleaner and more efficiently.</p>
+          <ul>
+            <li>Coil &amp; blower access</li>
+            <li>Filter recommendations</li>
+            <li>System longevity</li>
+          </ul>
+          <a href="/services/hvac-maintenance/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>🏢 Commercial Duct Cleaning</h3>
+          <p>Offices, retail, and light commercial spaces on James Island and greater Charleston.</p>
+          <ul>
+            <li>Flexible scheduling</li>
+            <li>Minimal disruption</li>
+            <li>Documented results</li>
+          </ul>
+          <a href="/services/commercial-duct-cleaning/" class="btn btn-outline-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Clean Your <span>Ducts</span></h2>
+        <p>A structured, transparent process from first call to final walkthrough.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <h3>Schedule &amp; Prep</h3>
+          <p>Call or text. We confirm appointment, home size, and any access notes so the crew arrives ready.</p>
+        </div>
+        <div class="process-step">
+          <h3>Inspection</h3>
+          <p>We examine accessible ducts, registers, and the air handler to plan the cleaning path.</p>
+        </div>
+        <div class="process-step">
+          <h3>Negative-Pressure Clean</h3>
+          <p>Powerful vacuum creates suction while brushes and air tools agitate debris from the duct walls.</p>
+        </div>
+        <div class="process-step">
+          <h3>Registers &amp; Finish</h3>
+          <p>Each vent is cleaned, optional sanitizer applied, and the system is checked before we leave.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map / Location -->
+  <section class="section map-section" id="location">
+    <div class="container">
+      <div class="section-header">
+        <h2>Find Us in <span>Charleston</span></h2>
+        <p>Proudly serving from 775 Folly Rd d on James Island.</p>
+      </div>
+      <div class="map-embed">
+        <iframe
+          title="Map of 775 Folly Rd, Charleston SC"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-79.9775%2C32.7316%2C-79.9575%2C32.7516&amp;layer=mapnik&amp;marker=32.7416%2C-79.9675"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p style="text-align:center;margin-top:1rem;color:var(--text-muted)">
+        📍 775 Folly Rd d, Charleston, SC 29412<br />
+        Serving Charleston · James Island · Folly Beach · West Ashley · Mount Pleasant · North Charleston and surrounding Lowcountry communities.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready for Cleaner Indoor Air?</h2>
+      <p>Don't wait for allergy season or another dusty week. Call today for same-day or next-day air duct cleaning in Charleston.</p>
+      <a href={`tel:${phone}`} class="btn btn-primary">Call Now — {phoneDisplay}</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Air Duct Cleaning <span>Questions</span></h2>
+        <p>Straight answers Charleston homeowners ask most.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>How often should I have my air ducts cleaned?</h3>
+          <p>Most homes benefit every 3–5 years. More often if you have pets, recent renovations, smokers, or visible dust and odors. Charleston humidity can accelerate buildup.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How much does air duct cleaning cost in Charleston?</h3>
+          <p>Pricing depends on home size, number of vents, and accessibility. We provide a clear written quote before any work starts — no hidden fees.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you clean dryer vents too?</h3>
+          <p>Yes. Dryer vent cleaning is one of our core services and is strongly recommended for fire safety and efficiency.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is the cleaning process messy?</h3>
+          <p>No. We use contained negative-pressure systems so debris is pulled into our equipment rather than into your living space. Floors and furniture are protected.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are you licensed and insured?</h3>
+          <p>Yes. All work is performed by insured technicians familiar with residential and light-commercial HVAC systems common in the Charleston area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

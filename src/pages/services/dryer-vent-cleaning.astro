@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Dryer Vent Cleaning | Charleston SC" description="Dryer vent cleaning in Charleston, SC. Remove lint, improve efficiency, reduce fire risk.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Dryer Vent Cleaning</h1>
+      <p>Safer, faster drying for Charleston homes.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>Lint buildup in dryer vents restricts airflow, increases drying time, raises energy use, and is a leading cause of dryer fires. We clean the full vent run from the dryer to the exterior termination.</p>
+      <h2>What's Included</h2>
+      <ul>
+        <li>Full length vent cleaning with rotary brush or air tools</li>
+        <li>Inspection of exterior hood and flap</li>
+        <li>Removal of accumulated lint</li>
+        <li>Recommendations if rigid duct upgrades are needed</li>
+      </ul>
+      <h2>Schedule Service</h2>
+      <p>Call <a href={`tel:${phone}`}>{phoneDisplay}</a>. Often combined with air duct cleaning for convenience.</p>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="HVAC Maintenance Support | Charleston SC" description="Air duct cleaning as part of HVAC care in Charleston, SC.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>HVAC Maintenance Support</h1>
+      <p>Cleaner ducts help your system work more efficiently.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>Restricted or dirty ducts force your HVAC system to work harder. Professional cleaning complements regular filter changes, coil cleaning, and tune-ups by restoring proper airflow paths.</p>
+      <h2>Benefits</h2>
+      <ul>
+        <li>Improved airflow to rooms</li>
+        <li>Reduced strain on blower and compressor</li>
+        <li>Support for consistent temperatures</li>
+        <li>Cleaner air delivered through the system</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Allergies & Indoor Air | Charleston SC" description="Allergy flare-ups at home? Air duct cleaning can help reduce pollen, dander, and dust in Charleston homes.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Allergy Flare-Ups</h1>
+      <p>Indoor air quality matters for sensitive households.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>Pollen, pet dander, dust mites, and mold spores can collect in ducts and re-enter the air when the HVAC runs. Cleaning the system reduces one source of continuous exposure inside the home.</p>
+      <h2>How Cleaning Helps</h2>
+      <ul>
+        <li>Removes allergen-laden debris from duct surfaces</li>
+        <li>Supports better results from quality filters</li>
+        <li>Often paired with sanitization for extra odor and microbe control</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

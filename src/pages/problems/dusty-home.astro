@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Dusty Home | Air Duct Cleaning Charleston SC" description="Dust returns quickly? Air duct cleaning in Charleston, SC can reduce recirculated particles.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Dusty Home</h1>
+      <p>A common reason Charleston homeowners schedule duct cleaning.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>If dust reappears on surfaces within days of cleaning, particles trapped in your ductwork may be recirculating every time the system runs. Professional cleaning removes that reservoir of debris.</p>
+      <h2>How Cleaning Helps</h2>
+      <ul>
+        <li>Removes accumulated dust from supply and return lines</li>
+        <li>Reduces the amount of particles blown into living spaces</li>
+        <li>Works best alongside good filtration and regular filter changes</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,41 @@
+---
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Air Duct Cleaning Charleston</h4>
+        <p>Professional air duct &amp; dryer vent cleaning serving Charleston, James Island, Folly Beach, West Ashley and the Lowcountry. Cleaner air, better airflow, fair pricing.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="/services/air-duct-cleaning/">Air Duct Cleaning</a></p>
+        <p><a href="/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a></p>
+        <p><a href="/services/sanitization/">Sanitization</a></p>
+        <p><a href="/services/mold-remediation/">Mold Remediation</a></p>
+        <p><a href="/services/hvac-maintenance/">HVAC Maintenance</a></p>
+      </div>
+      <div>
+        <h4>Common Problems</h4>
+        <p><a href="/problems/dusty-home/">Dusty Home</a></p>
+        <p><a href="/problems/allergies/">Allergies</a></p>
+        <p><a href="/problems/musty-smell/">Musty Odors</a></p>
+        <p><a href="/problems/poor-airflow/">Poor Airflow</a></p>
+        <p><a href="/problems/high-energy-bills/">High Bills</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+        <p>775 Folly Rd d<br />Charleston, SC 29412</p>
+        <p>Mon–Sat 7am–8pm · Emergency available</p>
+        <p style="margin-top:0.75rem"><a href="/service-areas/">Service Areas</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {year} Air Duct Cleaning Charleston SC. All rights reserved. | <a href="/privacy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>

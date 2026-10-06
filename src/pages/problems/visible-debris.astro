@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Visible Debris in Vents | Charleston SC" description="See dust or debris in your vents? Time for professional air duct cleaning in Charleston, SC.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Visible Debris in Vents</h1>
+      <p>A clear signal that cleaning is overdue.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <p>Dust, insulation particles, or discoloration at registers means material is present in the system and being moved by airflow. Professional cleaning addresses both the visible ends and the duct runs behind them.</p>
+      <h2>How Cleaning Helps</h2>
+      <ul>
+        <li>Removes debris from registers and connected ducts</li>
+        <li>Prevents continued blow-out of particles into rooms</li>
+        <li>Allows visual confirmation of improved condition</li>
+      </ul>
+      <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>

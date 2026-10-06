@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+18435550199';
+const phoneDisplay = '(843) 555-0199';
+---
+<Layout title="Contact Us | Air Duct Cleaning Charleston SC" description="Call or reach out for air duct cleaning in Charleston, SC. Same-day quotes available.">
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Ready for cleaner air? We're here to help.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container content-block">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> <a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+      <p><strong>Address:</strong> 775 Folly Rd d, Charleston, SC 29412</p>
+      <p><strong>Hours:</strong> Monday–Saturday 7:00 AM – 8:00 PM. Emergency and after-hours requests accepted when available.</p>
+      <h2>What to Expect</h2>
+      <p>When you call, we'll ask about home size, number of vents, any odors or visible issues, and preferred timing. Most residential jobs can be scheduled within 24 hours. You'll receive a clear price range or written estimate before we begin.</p>
+      <p style="margin-top:2rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+    </div>
+  </section>
+</Layout>
